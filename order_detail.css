@@ -1,0 +1,230 @@
+:root {
+    --orange: #FF9B51;
+    --yellow: #FFD46C;
+    --off-white: #FDF4EE;
+    --light-blue: #A8E2E1;
+    --text-dark: #333;
+    --text-light: #fff;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+    padding-bottom: 70px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: var(--off-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.search-form input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    padding-right: 30px;
+}
+
+.social-links a:hover {
+    color: var(--yellow);
+}
+
+.order-history-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.order-history-container h1 {
+    color: var(--orange);
+    border-bottom: 2px solid var(--light-blue);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.back-link a:hover {
+    color: var(--orange);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: var(--light-blue);
+    color: var(--text-dark);
+    text-align: left;
+    padding: 15px;
+    font-weight: 700;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: var(--off-white);
+}
+
+tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--text-light);
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.status-pending { background-color: #f39c12; }
+.status-paid { background-color: #3498db; }
+.status-shipped { background-color: #2ecc71; }
+.status-delivered { background-color: #1abc9c; }
+.status-cancelled { background-color: #e74c3c; }
+
+.btn-detail {
+    background-color: var(--orange);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+.back-link{
+    height: 30px;
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: #00b7ff;
+    color: #fff;
+
+}
+
+
+.btn-detail:hover {
+    background-color: #e68d49;
+}
+
+.no-orders-message {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--off-white);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.no-orders-message h2 {
+    color: var(--text-dark);
+}
+.no-orders-message p {
+    color: #666;
+    margin-bottom: 20px;
+}
+.no-orders-message .cta-button {
+    background-color: var(--orange);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}

@@ -1,0 +1,238 @@
+
+:root {
+    --orange: #FF9B51;
+    --yellow: #FFD46C;
+    --off-white: #FDF4EE;
+    --light-blue: #A8E2E1;
+    --text-dark: #333;
+    --text-light: #fff;
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: var(--off-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.checkout-page-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.checkout-page-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem; 
+}
+
+
+.checkout-form {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start; 
+}
+
+.checkout-left {
+    flex: 2; 
+}
+
+.checkout-right {
+    flex: 1; 
+    position: sticky; 
+    top: 100px; 
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem; 
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; 
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+.shipping-options,
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shipping-option,
+.payment-option {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.shipping-option input[type="radio"],
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+    accent-color: var(--orange);
+}
+
+
+.item-list {
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dotted #eee;
+    font-size: 0.9rem;
+}
+.summary-item:last-child {
+    border-bottom: none;
+}
+.item-name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.item-price {
+    font-weight: 500;
+}
+
+.summary-totals {
+    border-top: 2px solid #ccc;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-row,
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 1rem; 
+}
+
+.summary-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.place-order-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--orange);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: #e68a4a; 
+}
+
+@media (max-width: 992px) {
+    .checkout-form {
+        flex-direction: column; 
+    }
+    .checkout-right {
+        position: static; 
+        width: 100%;
+    }
+}
+
+.error-message-box {
+    background-color: #f8d7da; 
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}

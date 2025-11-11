@@ -1,0 +1,163 @@
+:root {
+    --orange: #FF9B51;
+    --yellow: #FFD46C;
+    --off-white: #FDF4EE;
+    --text-dark: #333;
+    --text-light: #fff;
+} 
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: var(--off-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.edit-profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.edit-profile-container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--orange);
+    margin-bottom: 30px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-section {
+    padding: 20px;
+    border: 1px solid var(--off-white);
+    border-radius: 8px;
+    background-color: var(--off-white);
+}
+
+.form-section h2 {
+    font-size: 1.5em;
+    color: var(--text-dark);
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--yellow);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Kanit', sans-serif;
+}
+
+.password-section .note {
+    color: #f39c12; 
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.save-button {
+    background-color: var(--orange);
+    color: var(--text-light);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #e68a4a;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: var(--text-dark);
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.cancel-button:hover {
+    background-color: #bbb;
+}

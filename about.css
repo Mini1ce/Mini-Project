@@ -1,0 +1,151 @@
+:root {
+    --orange: #FF9B51;
+    --yellow: #FFD46C;
+    --off-white: #FDF4EE;
+    --text-dark: #333;
+    --text-light: #fff;
+}
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+}
+h1, h2, h3 { font-weight: 700; }
+a { text-decoration: none; color: inherit; }
+
+header {
+    background-color: var(--off-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0 5%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.search-form input[type="text"] {
+    width: 100%;
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 20px; 
+    background-color: #FFFFFF; 
+    font-size: 0.9em;
+    font-family: inherit;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+    transition: box-shadow 0.3s ease;
+}
+
+.search-form input[type="text"]:focus 
+{
+    box-shadow: 0 0 0 3px rgba(255, 155, 81, 0.2); 
+}
+
+.logo { 
+    font-size: 1.8em; 
+    font-weight: 700; 
+    color: var(--orange); 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    padding: 0; 
+    margin: 0;  
+    align-items: center; 
+}
+.nav-links a:hover { color: var(--orange); }
+
+.nav-icons { display: flex; gap: 20px; font-size: 1.2em; }
+
+.about-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d34?q=80&w=1887'); /* คุณสามารถเปลี่ยนรูปพื้นหลังได้ที่นี่ */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 5%;
+    text-align: center;
+    color: var(--text-light);
+}
+.about-hero h1 {
+    font-size: 3.2em;
+    line-height: 1.3;
+}
+
+.about-mission-section, .about-why-us, .about-cta {
+    
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 5%;
+    text-align: center;
+}
+.about-content-section h2, .about-mission-section h2, .about-why-us h2, .about-cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.about-content-section p, .about-mission-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+.about-mission-section {
+    background-color: var(--off-white);
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: left;
+}
+.why-us-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+.why-us-card h3 {
+    font-size: 1.5em;
+    color: var(--orange);
+    margin: 0 0 10px 0;
+}
+
+.cta-button {
+    background-color: var(--orange);
+    color: var(--text-light);
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.cta-button:hover {
+    background-color: #e68a4a;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: 20px 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    margin-left: 15px;
+}
+
+.social-links a:hover {
+    color: var(--yellow);
+}

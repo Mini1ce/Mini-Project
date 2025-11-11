@@ -1,0 +1,142 @@
+:root {
+    --orange: #FF9B51;
+    --yellow: #FFD46C;
+    --off-white: #FDF4EE;
+    --light-blue: #A8E2E1;
+    --text-dark: #333;
+    --text-light: #fff;
+    --border-light: #eee;
+    --primary-color: #3B6362;
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--off-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 15px 5%;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.container {
+    width: 100%;
+    max-width: 450px; 
+    height: auto; 
+    background-color: var(--light-blue);
+    text-align: left; 
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    padding: 40px; 
+    box-sizing: border-box; 
+    margin-top: 100px; 
+    margin-bottom: 50px;
+}
+
+.container h1 {
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 30px; 
+    color: var(--primary-color);
+}
+.container p{
+    text-align: center;
+}
+
+label {
+    display: block; 
+    text-align: left; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 16px;
+    resize: vertical; 
+}
+
+.checkbox-group {
+    text-align: left; 
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2e5150;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 20px;
+}
